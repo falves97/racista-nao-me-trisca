@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <h1>{{ content.title }}</h1>
+
+    {{ content.article|raw }}
+
+    <div>
+        {% block galery %}
+            {% for image in content.images %}
+
+                <img src="{{ image.thumbnails['sulu-400x400'] }}" alt="{{ image.title }}"
+                     title="{{ image.description|default(image.title) }}">
+            {% endfor %}
+        {% endblock %}
+    </div>
+
+    {% block galery_videos %}
+        <div>
+            <ul>
+                {% for video in content.videos %}
+                    <li>
+                        <h3>{{ video.title }}</h3>
+                        <video width="320" height="240" src="{{ video.url }}" controls>
+                            Your browser does not support the video tag.
+                        </video>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endblock %}
+
+{% endblock %}
