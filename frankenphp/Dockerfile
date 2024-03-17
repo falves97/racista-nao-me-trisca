@@ -1,6 +1,6 @@
 FROM dunglas/frankenphp
 
-COPY conf.d/memory.ini /usr/local/etc/php/conf.d/memory.ini
+COPY conf.d/app-configs.ini /usr/local/etc/php/conf.d/app-configs.ini
 
 RUN set -eux; \
 	install-php-extensions \
