@@ -1,0 +1,35 @@
+@use "../custom-variables" as v;
+
+.nav {
+  display: flex;
+  height: 100%;
+
+  .nav__list {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    .nav__item {
+      display: flex;
+      height: 100%;
+      list-style: none;
+
+      a {
+        align-items: center;
+        color: white;
+        display: flex;
+        font-size: 1.4rem;
+        font-weight: bold;
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        transition: all ease-in-out .3s;
+
+        &:hover {
+          background-color: v.$persian-green;
+        }
+      }
+    }
+  }
+}
