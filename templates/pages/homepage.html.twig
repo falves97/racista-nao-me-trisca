@@ -16,7 +16,9 @@
                     <div class="content__video">
                         <video
                                 src="{{ content.video.url }}"
-                                poster="{{ content.video.thumbnails['300x169'] }}"
+                                {% if content.video.thumbnails %}
+                                    poster="{{ content.video.thumbnails['300x169'] }}"
+                                {% endif %}
                                 controls
                         >
                             Your browser does not support the video tag.
