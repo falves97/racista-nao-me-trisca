@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <div class="container">
+        <div class="content">
+            <h1 class="title-1">{{ content.title }}</h1>
+
+            {% if content.article %}
+                <div class="content__description">
+                    {{ content.article|raw }}
+                </div>
+            {% endif %}
+        </div>
+
+        {% for block in content.blocks %}
+            {% include 'blocks/' ~ block.type ~ '.html.twig' with {
+                content: block,
+                view: view.blocks[loop.index0],
+                url: content.url,
+            } %}
+        {% endfor %}
+    </div>
+{% endblock %}

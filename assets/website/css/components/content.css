@@ -1,0 +1,17 @@
+.content {
+    margin: 20px auto;
+
+}
+
+.content__description {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 0 10px;
+}
+
+@media only screen and (width < 576px) {
+    .content__description {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}

@@ -1,0 +1,21 @@
+:root {
+    /* Color Bistre */
+    --bistre-h: 35;
+    --bistre-s: 60%;
+    --bistre-l: 11%;
+
+    /* Color Persian Green */
+    --persian-green-h: 172;
+    --persian-green-s: 94%;
+    --persian-green-l: 32%;
+
+    /* Color Tangerine */
+    --tangerine-h: 34;
+    --tangerine-s: 100%;
+    --tangerine-l: 47%;
+
+    /* HSL paleta */
+    --hsl-bistre: hsl(var(--bistre-h) var(--bistre-s) var(--bistre-l));
+    --hsl-persian-green: hsl(var(--persian-green-h) var(--persian-green-s) var(--persian-green-l));
+    --hsl-tangerine: hsl(var(--tangerine-h) var(--tangerine-s) var(--tangerine-l));
+}

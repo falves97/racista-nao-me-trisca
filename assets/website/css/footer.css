@@ -1,0 +1,10 @@
+.footer {
+    background-color: hsl(var(--bistre-h) var(--bistre-s) calc(var(--bistre-l) + 30%));
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+}

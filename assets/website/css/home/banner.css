@@ -1,0 +1,60 @@
+.home__banner {
+    align-items: center;
+    background: url("../../images/home/banner.webp") no-repeat center;
+    background-size: cover;
+    display: flex;
+    height: 900px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+
+    .home__banner-ladrilho {
+        background: url("../../images/home/ladrilho.svg");
+        background-size: 100% auto;
+        height: 100%;
+        left: 5%;
+        position: absolute;
+        width: 150px;
+    }
+
+    .home__banner-title {
+        background-color: var(--hsl-tangerine);
+        color: white;
+        font-size: 6rem;
+        padding: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 10;
+    }
+}
+
+@media only screen and (width < 992px) {
+    .home__banner {
+        .home__banner-ladrilho {
+            width: 50px;
+        }
+
+        .home__banner-title {
+            font-size: 3rem;
+            padding: 30px 0;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (width < 576px) {
+    .home__banner {
+
+        height: 420px;
+
+        .home__banner-title {
+            font-size: 1.4rem;
+            padding: 30px 0;
+            width: 100%;
+        }
+
+        .home__banner-ladrilho {
+            width: 50px;
+        }
+    }
+}

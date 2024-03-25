@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<formats xmlns="http://schemas.sulu.io/media/formats"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<formats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://schemas.sulu.io/media/formats"
          xsi:schemaLocation="http://schemas.sulu.io/media/formats http://schemas.sulu.io/media/formats-1.1.xsd">
 
     <!-- Fixed width and dynamic height -->
@@ -10,6 +10,10 @@
 
     <format key="360x">
         <scale x="360"/>
+    </format>
+
+    <format key="300x">
+        <scale x="300"/>
     </format>
 
     <!-- Dynamic width and fixed height -->
@@ -24,6 +28,10 @@
 
     <format key="360x202">
         <scale x="360" y="202"/>
+    </format>
+
+    <format key="300x169">
+        <scale x="300" y="169"/>
     </format>
 
     <!-- Max width and max height -->

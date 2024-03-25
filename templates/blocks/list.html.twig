@@ -1,0 +1,33 @@
+{% set page = view.smartContent.page %}
+
+<div class="container my-4 d-flex flex-wrap gap-3">
+
+    {% for element in content.smartContent %}
+        <a href="{{ element.url }}"
+           class="d-flex col-12"
+        >
+            {% if element.thumbnail %}
+                <div class="col-2 d-flex justify-content-center">
+                    <img class="img-fluid" src="{{ element.thumbnail.thumbnails["sulu-100x100"] }}" alt="Thumbnail">
+                </div>
+            {% endif %}
+
+            <div class="col-10">
+                <h1 class="col-12">{{ element.title }}</h1>
+                <div>
+                    {{ element.description }}
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+
+    <ul class="pagination">
+        {% if page-1 >= 1 %}
+            <li><a href="{{ sulu_content_path(url) }}?p={{ page-1 }}">&laquo;</a></li>
+        {% endif %}
+
+        {% if view.smartContent.hasNextPage %}
+            <li><a href="{{ sulu_content_path(url) }}?p={{ page+1 }}">&raquo;</a></li>
+        {% endif %}
+    </ul>
+</div>

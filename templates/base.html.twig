@@ -15,7 +15,7 @@
     {% endblock %}
 
     {% block style %}
-        {{ encore_entry_link_tags('app') }}
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     {% endblock %}
 </head>
 <body class="ubuntu-regular">
@@ -37,6 +37,10 @@
                     </li>
                 {% endfor %}
             </ul>
+
+            <button class="nav__button">
+                <span class="nav__button-lines"></span>
+            </button>
         </nav>
     {% endblock %}
 </header>
@@ -52,8 +56,7 @@
 </footer>
 
 {% block javascripts %}
-    {{ encore_entry_script_tags('app') }}
+    {{ importmap() }}
 {% endblock %}
-{{ encore_entry_script_tags('app') }}
 </body>
 </html>
