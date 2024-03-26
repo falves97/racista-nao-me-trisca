@@ -1,0 +1,13 @@
+<div class="splide video-carousel">
+    <div class="splide__track">
+        <ul class="splide__list">
+            {% for element in content.videoGallery %}
+                <li class="splide__slide"
+                    data-splide-html-video="{{ element.url }}"
+                >
+                    <img src="{{ element.thumbnails['1200x630'] }}">
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+.podcasts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+
+    .podcasts__item {
+        display: flex;
+
+        audio {
+            width: 100%;
+        }
+    }
+}

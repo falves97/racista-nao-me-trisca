@@ -69,7 +69,13 @@
             </meta>
         </property>
 
-        <block name="blocks" default-type="visualMedias" minOccurs="0">
+        <property name="gameUrl" type="url">
+            <meta>
+                <title lang="en">Game URL</title>
+            </meta>
+        </property>
+
+        <block name="blocks" default-type="imageGallery" minOccurs="0">
             <meta>
                 <title lang="en">Galleries</title>
             </meta>
@@ -83,32 +89,37 @@
             </params>
 
             <types>
-                <type name="visualMedias">
+                <type name="imageGallery">
                     <meta>
-                        <title lang="en">Images and Videos</title>
+                        <title lang="en">Images</title>
                     </meta>
 
                     <properties>
-                        <property name="visualMedias" type="media_selection">
+                        <property name="imageGallery" type="media_selection">
                             <meta>
                                 <title lang="en">Images and Videos</title>
                             </meta>
 
                             <params>
-                                <param name="types" value="image,video"/>
+                                <param name="types" value="image"/>
                             </params>
                         </property>
                     </properties>
                 </type>
 
-                <type name="podcast">
+                <type name="videoGallery">
                     <meta>
-                        <title lang="en">Podcast</title>
+                        <title lang="en">Videos</title>
                     </meta>
+
                     <properties>
-                        <property name="podcast" type="single_media_selection">
+                        <property name="videoGallery" type="media_selection">
+                            <meta>
+                                <title lang="en">Videos</title>
+                            </meta>
+
                             <params>
-                                <param name="types" value="audio"/>
+                                <param name="types" value="video"/>
                             </params>
                         </property>
                     </properties>

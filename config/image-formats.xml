@@ -4,38 +4,70 @@
          xsi:schemaLocation="http://schemas.sulu.io/media/formats http://schemas.sulu.io/media/formats-1.1.xsd">
 
     <!-- Fixed width and dynamic height -->
-    <format key="720x">
-        <scale x="720"/>
-    </format>
-
-    <format key="360x">
-        <scale x="360"/>
-    </format>
-
-    <format key="300x">
-        <scale x="300"/>
-    </format>
 
     <!-- Dynamic width and fixed height -->
-    <format key="x360">
-        <scale y="360"/>
-    </format>
 
     <!-- Fixed width and fixed height -->
-    <format key="720x360">
-        <scale x="720" y="360"/>
+    <format key="1920x1080">
+        <scale x="1920" y="1080"/>
     </format>
-
-    <format key="360x202">
-        <scale x="360" y="202"/>
+    <format key="1280x720">
+        <scale x="1280" y="720"/>
     </format>
-
-    <format key="300x169">
-        <scale x="300" y="169"/>
+    <format key="250x250">
+        <scale x="250" y="250"/>
+    </format>
+    <format key="1200x630">
+        <scale x="1200" y="630"/>
+    </format>
+    <format key="250x100">
+        <scale x="250" y="100"/>
+    </format>
+    <format key="100x100">
+        <scale x="100" y="100"/>
+    </format>
+    <format key="16x16">
+        <scale x="16" y="16"/>
+    </format>
+    <format key="32x32">
+        <scale x="32" y="32"/>
+    </format>
+    <format key="1600x500">
+        <scale x="1600" y="500"/>
+    </format>
+    <format key="150x150">
+        <scale x="150" y="150"/>
     </format>
 
     <!-- Max width and max height -->
-    <format key="720x360-inset">
-        <scale x="720" y="360" mode="inset"/>
+    <format key="1920x1080--inset">
+        <scale x="1920" y="1080" mode="inset"/>
+    </format>
+    <format key="1280x720--inset">
+        <scale x="1280" y="720" mode="inset"/>
+    </format>
+    <format key="250x250--inset">
+        <scale x="250" y="250" mode="inset"/>
+    </format>
+    <format key="1200x630--inset">
+        <scale x="1200" y="630" mode="inset"/>
+    </format>
+    <format key="250x100--inset">
+        <scale x="250" y="100" mode="inset"/>
+    </format>
+    <format key="100x100--inset">
+        <scale x="100" y="100" mode="inset"/>
+    </format>
+    <format key="16x16--inset">
+        <scale x="16" y="16" mode="inset"/>
+    </format>
+    <format key="32x32--inset">
+        <scale x="32" y="32" mode="inset"/>
+    </format>
+    <format key="1600x500--inset">
+        <scale x="1600" y="500" mode="inset"/>
+    </format>
+    <format key="150x150--inset">
+        <scale x="150" y="150" mode="inset"/>
     </format>
 </formats>

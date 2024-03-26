@@ -1,9 +1,28 @@
-{% for element in content.smartContent %}
-    {% if element.thumbnail %}
-        <img src="{{ element.thumbnail }}" alt="Thumbnail">
-    {% endif %}
-    <h1>{{ element.title }}</h1>
-    <div>
-        {{ element.description }}
+<div class="content">
+    <div class="splide timeline">
+        <div class="splide__track">
+            <ul class="splide__list timeline__list">
+                {% for element in content.smartContent %}
+                    <li class="splide__slide timeline__item">
+                        <a href="{{ element.url }}">
+                            {% if element.thumbnail %}
+                                <img src="{{ element.thumbnail.thumbnails['250x250'] }}" alt="Thumbnail">
+                            {% endif %}
+                            <h3 class="title-3">{{ element.title }}</h3>
+                            <div>
+                                {{ element.description }}
+                            </div>
+                            {% if element.date %}
+                                <div class="item__date">{{ element.date|date("m/d/Y") }}</div>
+                            {% endif %}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="timeline-progress">
+            <div class="timeline-progress-bar"></div>
+        </div>
     </div>
-{% endfor %}
+</div>

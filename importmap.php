@@ -18,4 +18,13 @@ return [
         'path' => 'js/app.js',
         'preload' => true,
     ],
+    '@splidejs/splide' => [
+        'url' => 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm',
+    ],
+    '@splidejs/splide/css' => [
+        'url' => 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/css/+esm',
+    ],
+    '@splidejs/splide-extension-video' => [
+        'url' => 'https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/+esm',
+    ],
 ];

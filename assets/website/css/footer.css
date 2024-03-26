@@ -1,6 +1,7 @@
 .footer {
     background-color: hsl(var(--bistre-h) var(--bistre-s) calc(var(--bistre-l) + 30%));
     color: white;
+    margin-top: 20px;
     padding: 30px 0;
     text-align: center;
 

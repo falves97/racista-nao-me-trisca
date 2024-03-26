@@ -3,17 +3,33 @@
 {% block content %}
     <div class="container">
         <div class="content">
+            {% if content.thumbnail %}
+                <div class="content__thumbnail">
+                    <img src="{{ content.thumbnail.thumbnails['1280x720'] }}"
+                         alt=""
+                    >
+                </div>
+            {% endif %}
+
             <h1 class="title-1">{{ content.title }}</h1>
+
             <div class="content__description">
                 {{ content.article|raw }}
             </div>
-            
+
             {% for block in content.blocks %}
                 {% include 'blocks/' ~ block.type ~ '.html.twig' with {
                     content: block,
                     view: view.blocks[loop.index0],
                 } %}
             {% endfor %}
+
+            {% if content.gameUrl %}
+                <a href="{{ content.gameUrl }}" class="game-url">
+                    Link para o jogo<i class="fa-solid fa-location-arrow"></i>
+                </a>
+            {% endif %}
+
         </div>
     </div>
 {% endblock %}
