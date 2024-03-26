@@ -1,0 +1,26 @@
+.content {
+    margin: 0 20px;
+
+    .content__thumbnail {
+        margin-bottom: 2rem;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+.content__description {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+    padding: 0 10px;
+}
+
+@media only screen and (width < 576px) {
+    .content__description {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}

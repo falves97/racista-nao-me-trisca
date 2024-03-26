@@ -175,6 +175,21 @@
     "symfony-cmf/routing-bundle": {
         "version": "3.0.2"
     },
+    "symfony/asset-mapper": {
+        "version": "6.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "6.3",
+            "ref": "e8c46ba5e488fc2d7462ab6832559ab93867370a"
+        },
+        "files": [
+            "assets/app.js",
+            "assets/styles/app.css",
+            "config/packages/asset_mapper.yaml",
+            "importmap.php"
+        ]
+    },
     "symfony/console": {
         "version": "6.3",
         "recipe": {
@@ -356,5 +371,8 @@
             "config/packages/web_profiler.yaml",
             "config/routes/web_profiler.yaml"
         ]
+    },
+    "twig/extra-bundle": {
+        "version": "v3.8.0"
     }
 }

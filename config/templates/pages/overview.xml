@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://schemas.sulu.io/template/template"
+          xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+
+    <key>overview</key>
+
+    <view>pages/overview</view>
+    <controller>Sulu\Bundle\WebsiteBundle\Controller\DefaultController::indexAction</controller>
+    <cacheLifetime>604800</cacheLifetime>
+
+    <meta>
+        <title lang="en">Overview</title>
+    </meta>
+
+    <properties>
+        <property name="title" type="text_line" mandatory="true">
+            <meta>
+                <title lang="en">Title</title>
+            </meta>
+            <params>
+                <param name="headline" value="true"/>
+            </params>
+
+            <tag name="sulu.rlp.part"/>
+        </property>
+
+        <property name="url" type="resource_locator" mandatory="true">
+            <meta>
+                <title lang="en">Resourcelocator</title>
+            </meta>
+
+            <tag name="sulu.rlp"/>
+        </property>
+
+        <property name="article" type="text_editor">
+            <meta>
+                <title lang="en">Article</title>
+            </meta>
+        </property>
+
+        <block name="blocks" default-type="grid" minOccurs="0">
+            <meta>
+                <title lang="en">Lists</title>
+            </meta>
+
+            <params>
+                <param name="add_button_text">
+                    <meta>
+                        <title lang="en">Add</title>
+                    </meta>
+                </param>
+            </params>
+
+            <types>
+                <type name="timeline">
+                    <meta>
+                        <title lang="en">Timeline</title>
+                    </meta>
+
+                    <properties>
+                        <property name="smartContent" type="smart_content">
+                            <meta>
+                                <title lang="en">Smart Content</title>
+                            </meta>
+
+                            <params>
+                                <param name="provider" value="date_order_pages"/>
+
+                                <param name="properties" type="collection">
+                                    <param name="title" value="title"/>
+                                    <param name="thumbnail" value="thumbnail"/>
+                                    <param name="description" value="description"/>
+                                    <param name="date" value="date"/>
+                                </param>
+                            </params>
+                        </property>
+                    </properties>
+                </type>
+
+                <type name="grid">
+                    <meta>
+                        <title lang="en">Grid</title>
+                    </meta>
+
+                    <properties>
+                        <property name="smartContent" type="smart_content">
+                            <meta>
+                                <title lang="en">Smart Content</title>
+                            </meta>
+
+                            <params>
+                                <param name="provider" value="pages"/>
+                                <param name="max_per_page" value="8"/>
+                                <param name="page_parameter" value="p"/>
+
+                                <param name="properties" type="collection">
+                                    <param name="title" value="title"/>
+                                    <param name="thumbnail" value="thumbnail"/>
+                                    <param name="description" value="description"/>
+                                </param>
+                            </params>
+                        </property>
+                    </properties>
+                </type>
+
+                <type name="reels">
+                    <meta>
+                        <title lang="en">Reels</title>
+                    </meta>
+
+                    <properties>
+                        <property name="reels" type="media_selection">
+                            <meta>
+                                <title lang="en">Reels</title>
+                            </meta>
+
+                            <params>
+                                <param name="types" value="video"/>
+                            </params>
+                        </property>
+                    </properties>
+                </type>
+
+                <type name="podcast">
+                    <meta>
+                        <title lang="en">Podcast</title>
+                    </meta>
+                    <properties>
+                        <property name="podcast" type="media_selection">
+                            <params>
+                                <param name="types" value="audio"/>
+                            </params>
+                        </property>
+                    </properties>
+                </type>
+            </types>
+        </block>
+
+    </properties>
+</template>

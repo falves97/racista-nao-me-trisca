@@ -1,0 +1,13 @@
+<div class="splide image-carousel">
+    <div class="splide__track">
+        <ul class="splide__list">
+            {% for element in content.imageGallery %}
+                <li class="splide__slide">
+                    <div class="image-carousel__slide">
+                        <img src="{{ element.thumbnails['1200x630'] }}" alt="">
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

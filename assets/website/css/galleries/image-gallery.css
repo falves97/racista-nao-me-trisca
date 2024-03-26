@@ -1,0 +1,10 @@
+.image-carousel {
+    margin: 20px 0;
+
+    .splide__slide {
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+}

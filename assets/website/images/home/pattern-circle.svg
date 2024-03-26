@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="399.13116"
+   height="199.13116"
+   viewBox="0 0 399.13116 199.13116"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <pattern
+       xlink:href="#pattern27"
+       preserveAspectRatio="xMidYMid"
+       id="pattern28"
+       patternTransform="matrix(0.5,0,0,0.5,-924.46723,785.4793)"
+       x="11"
+       y="21"
+       width="72.62904587"
+       height="59.4237648" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="33.013203"
+       height="33.013203"
+       patternTransform="translate(-924.46723,785.4793)"
+       preserveAspectRatio="xMidYMid"
+       id="pattern27">
+      <circle
+         style="fill:#05a08c;fill-opacity:1;stroke:#05a08c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         id="path27"
+         cx="16.506601"
+         cy="16.506601"
+         r="16.006601" />
+    </pattern>
+  </defs>
+  <g
+     id="g1"
+     transform="translate(679.57013,-705.8288)">
+    <rect
+       style="mix-blend-mode:normal;fill:url(#pattern28);fill-opacity:1;stroke:none;stroke-width:0.868821;stroke-dasharray:none;stroke-opacity:1"
+       id="rect28"
+       width="399.13116"
+       height="199.13118"
+       x="-679.57013"
+       y="705.8288" />
+  </g>
+</svg>

@@ -1,24 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<formats xmlns="http://schemas.sulu.io/media/formats"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<formats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://schemas.sulu.io/media/formats"
          xsi:schemaLocation="http://schemas.sulu.io/media/formats http://schemas.sulu.io/media/formats-1.1.xsd">
 
-    <!-- See: http://docs.sulu.io/en/latest/book/image-formats.html how to define image-formats -->
+    <!-- Fixed width and dynamic height -->
 
-    <!--
-    <format key="300x">
-        <meta>
-            <title lang="en">Example Image</title>
-            <title lang="de">Beispielbild</title>
-        </meta>
+    <!-- Dynamic width and fixed height -->
 
-        <scale x="300"/>
+    <!-- Fixed width and fixed height -->
+    <format key="1920x1080">
+        <scale x="1920" y="1080"/>
     </format>
-    -->
+    <format key="1280x720">
+        <scale x="1280" y="720"/>
+    </format>
+    <format key="250x250">
+        <scale x="250" y="250"/>
+    </format>
+    <format key="1200x630">
+        <scale x="1200" y="630"/>
+    </format>
+    <format key="250x100">
+        <scale x="250" y="100"/>
+    </format>
+    <format key="100x100">
+        <scale x="100" y="100"/>
+    </format>
+    <format key="16x16">
+        <scale x="16" y="16"/>
+    </format>
+    <format key="32x32">
+        <scale x="32" y="32"/>
+    </format>
+    <format key="1600x500">
+        <scale x="1600" y="500"/>
+    </format>
+    <format key="150x150">
+        <scale x="150" y="150"/>
+    </format>
 
-    <!--
-    Render an image from the media_selection in a specific format the following way:
-
-    <img src="{{ image.thumbnails['300x'] }}" alt="{{ image.title }}" title="{{ image.description|default(image.title) }}">
-    -->
+    <!-- Max width and max height -->
+    <format key="1920x1080--inset">
+        <scale x="1920" y="1080" mode="inset"/>
+    </format>
+    <format key="1280x720--inset">
+        <scale x="1280" y="720" mode="inset"/>
+    </format>
+    <format key="250x250--inset">
+        <scale x="250" y="250" mode="inset"/>
+    </format>
+    <format key="1200x630--inset">
+        <scale x="1200" y="630" mode="inset"/>
+    </format>
+    <format key="250x100--inset">
+        <scale x="250" y="100" mode="inset"/>
+    </format>
+    <format key="100x100--inset">
+        <scale x="100" y="100" mode="inset"/>
+    </format>
+    <format key="16x16--inset">
+        <scale x="16" y="16" mode="inset"/>
+    </format>
+    <format key="32x32--inset">
+        <scale x="32" y="32" mode="inset"/>
+    </format>
+    <format key="1600x500--inset">
+        <scale x="1600" y="500" mode="inset"/>
+    </format>
+    <format key="150x150--inset">
+        <scale x="150" y="150" mode="inset"/>
+    </format>
 </formats>

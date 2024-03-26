@@ -1,0 +1,13 @@
+.game-url {
+    align-items: center;
+    background-color: var(--hsl-persian-green);
+    color: white;
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: bold;
+    gap: 20px;
+    height: 80px;
+    justify-content: center;
+    text-decoration: none;
+    width: 300px;
+}

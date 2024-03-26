@@ -1,0 +1,15 @@
+.header {
+    align-items: center;
+    background-color: var(--hsl-bistre);
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+@media only screen and (width < 576px) {
+    .header {
+        height: 60px;
+    }
+}
