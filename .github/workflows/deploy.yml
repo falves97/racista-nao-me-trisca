@@ -1,0 +1,22 @@
+name: DEPLOY
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@7.0.0
+        with:
+          switches: -avzr --delete --exclude={"var", "vendor", "public/uploads", ".env.local"}
+          path: .
+          remote_path: /var/www/racista-nao-me-trisca/
+          remote_host: racistanaometrisca.com.br
+          remote_user: ${{secrets.DEPLOY_USER }}
+          remote_key: ${{ secrets.DEPLOY_KEY }}
