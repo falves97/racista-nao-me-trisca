@@ -15,7 +15,12 @@
     {% endblock %}
 
     {% block style %}
-        {{ encore_entry_link_tags('app') }}
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css">
+        <link rel="stylesheet" href="{{ asset('/fontawesome-free/css/all.css') }}">
+        <script defer src="{{ asset('/fontawesome-free/js/all.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
     {% endblock %}
 </head>
 <body class="ubuntu-regular">
@@ -37,6 +42,10 @@
                     </li>
                 {% endfor %}
             </ul>
+
+            <button class="nav__button">
+                <span class="nav__button-lines"></span>
+            </button>
         </nav>
     {% endblock %}
 </header>
@@ -52,8 +61,7 @@
 </footer>
 
 {% block javascripts %}
-    {{ encore_entry_script_tags('app') }}
+    {{ importmap() }}
 {% endblock %}
-{{ encore_entry_script_tags('app') }}
 </body>
 </html>

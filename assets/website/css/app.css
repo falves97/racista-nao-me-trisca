@@ -1,0 +1,9 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("variables.css");
+@import url("base.css");
+@import url("components/index.css");
+@import url("galleries/index.css");
+@import url("header/index.css");
+@import url("home/home.css");
+@import url("footer.css");

@@ -39,6 +39,8 @@
         "scheb/2fa-trusted-device": "^6.1",
         "stof/doctrine-extensions-bundle": "^1.8",
         "sulu/sulu": "~2.5.13",
+        "symfony/asset": "6.3.*",
+        "symfony/asset-mapper": "6.3.*",
         "symfony/config": "^6.3",
         "symfony/dotenv": "^6.3",
         "symfony/flex": "^1.17 || ^2.0",
@@ -49,7 +51,8 @@
         "symfony/runtime": "^6.3",
         "symfony/security-bundle": "^6.3",
         "symfony/twig-bundle": "^6.3",
-        "symfony/webpack-encore-bundle": "^2.1"
+        "twig/extra-bundle": "^2.12|^3.0",
+        "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.41",

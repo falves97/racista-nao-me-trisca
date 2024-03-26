@@ -50,9 +50,6 @@ node_modules
 phpstan.neon
 ###< phpstan/phpstan ###
 
-###> symfony/webpack-encore-bundle ###
-/node_modules/
-/public/build/
-npm-debug.log
-yarn-error.log
-###< symfony/webpack-encore-bundle ###
+###> symfony/asset-mapper ###
+/public/assets/
+###< symfony/asset-mapper ###

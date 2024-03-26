@@ -1,0 +1,51 @@
+.title-1,
+.title-2 {
+    color: var(--hsl-bistre);
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+
+    &::after {
+        background-color: var(--hsl-persian-green);
+        content: '';
+        display: block;
+        height: 6px;
+        width: 50px;
+    }
+}
+
+.title-1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+.title-2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.title-3 {
+    color: var(--hsl-bistre);
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+}
+
+
+@media only screen and (max-width: 575px) {
+    .title-1 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .title-2 {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+
+    .title-3 {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+}

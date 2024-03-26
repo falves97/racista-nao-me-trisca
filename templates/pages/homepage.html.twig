@@ -4,28 +4,30 @@
     <div class="home">
         <div class="home__banner">
             <div class="home__banner-ladrilho"></div>
-            <h1 class="home__banner-title">Racista não me trisca</h1>
+            <h1 class="home__banner-title">Racista não me Trisca!</h1>
         </div>
-        <div class="container home__container d-flex flex-wrap align-content-center gap-5 justify-content-center">
+        <div class="container home__container">
 
             <div class="home__pattern--circle"></div>
             <div class="home__pattern--arrows"></div>
 
-            <div class="row w-100">
+            <div class="home__content">
                 {% if content.video %}
-                    <div class="col-6 d-flex justify-content-end">
-                        <video width="480"
-                               src="{{ content.video.url }}"
-                               poster="{{ content.video.thumbnails['360x202'] }}"
-                               controls
+                    <div class="content__video">
+                        <video
+                                src="{{ content.video.url }}"
+                                {% if content.video.thumbnails %}
+                                    poster="{{ content.video.thumbnails['1280x720'] }}"
+                                {% endif %}
+                                controls
                         >
                             Your browser does not support the video tag.
                         </video>
                     </div>
                 {% endif %}
 
-                <div class="home__description col-6">
-                    <h1 class="home__title w-100 text-center my-3">{{ content.title }}</h1>
+                <div class="content__description">
+                    <h1 class="title-1">{{ content.title }}</h1>
 
                     {{ content.article|raw }}
                 </div>
